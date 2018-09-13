@@ -1,0 +1,80 @@
+@import './partials/_utils.scss';
+@import './partials/_typography.scss';
+@import './partials/_setup.scss';
+
+section {
+    width: 100%;
+    padding: 5rem 0;
+    canvas {
+        display: block;
+        width: 80%;
+        height: 90%;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+}
+
+.basic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    &__heading {
+        z-index: 10;
+        position: absolute;
+        margin:0;
+        &--h1 {
+            font-family: $heading-font;
+        }
+    }
+    &__header {
+        padding: 0;
+        &--canvas {
+            height: 100%;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+}
+
+.text {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    &__description {
+         font-size: 3rem;
+    }
+}
+
+.text__listContainer {
+    font-size: 2rem;
+    &--item {
+        padding: 2rem 0; 
+        
+        &--text {
+            padding: 1rem;
+        }
+        &--image {
+            width: 70%;
+            margin: 0 auto;
+            border-radius: 20px;
+            
+        }
+    }
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        position: absolute;
+        margin: 0;
+        color: ivory;
+    }
+
+}
+
+
