@@ -204,6 +204,14 @@ section {
       margin: 0 auto;
       border-radius: 20px; }
 
+.wild {
+  height: 100vh; }
+  .wild a {
+    padding: 5rem 0;
+    font-size: 5rem;
+    text-decoration: none;
+    color: #333; }
+
 .photo {
   display: flex;
   justify-content: center;
