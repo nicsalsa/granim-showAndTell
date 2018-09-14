@@ -268,11 +268,35 @@ a {
 
 .wild {
   height: 100vh; }
-  .wild a {
+  .wild__question {
     padding: 5rem 0;
     font-size: 5rem;
     text-decoration: none;
     color: #333; }
+
+.ftr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; }
+  .ftr__heading {
+    z-index: 10;
+    position: absolute;
+    margin: 0; }
+    .ftr__heading--h1 {
+      font-family: "Racing Sans One", cursive; }
+  .ftr__header {
+    padding: 0; }
+    .ftr__header--canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 0; }
 
 .pulse {
   animation-name: pulse;
