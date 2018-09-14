@@ -1,6 +1,8 @@
 // import Granim into JS file
 import Granim from 'granim';
 
+
+
 const granimInstance1 = new Granim({
    element: '#basic__header--canvas',
    name: 'basic-gradient',
@@ -17,7 +19,6 @@ const granimInstance1 = new Granim({
       }
    }
 });
-
    
    const granimInstance2 = new Granim({
       element: '#canvas-image-blending',
@@ -40,6 +41,8 @@ const granimInstance1 = new Granim({
          }
       }
    });
+
+
 
 
 

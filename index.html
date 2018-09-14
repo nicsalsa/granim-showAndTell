@@ -5,26 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700|Racing+Sans+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="publix/styles/style.css/animations.css">
     <title>Granim JS</title>
 </head>
+<!-- ===================BEGINNING OF BODY==================== -->
 <body>
+    <!-- =====HEADER STARTS =====-->
     <header class="basic">
         <div class="basic__heading">
             <h1 class="basic__heading--h1">Granim JS</h1>
+            <a class="headerLink" href="#main"><i class="pulse fas fa-chevron-circle-down"></i></a>
         </div>
         <section class="basic__header">
             <canvas id="basic__header--canvas" class="basic__header--canvas canvas"></canvas>
         </section>
     </header>
-    <main>
+    <!-- =====HEADER ENDS =====-->
+    <!-- =====MAIN STARTS===== -->
+    <main id="main">
+        <!-- 'TEXT' DEFINITION STARTS -->
         <section class="text wrapper">
             <h2 class="text__heading">What is it?</h2>
             <p class="text__description">Granim is a JavaScript library that allows you to create fluid and interactive gradient animations.</p>
+            <a href="#howTo">
+                <i class="pulse fas fa-chevron-circle-down"></i>
+            </a>
 
         </section>
-        <section class="howTo wrapper">
-            <h2 class="text__heading">How do I use it?</h2>
+        <!-- 'TEXT' DEFINITION ENDS -->
+        <!-- 'HOW TO' STARTS -->
+        <section class="howTo" id="howTo">
+            <h2 class="text__heading howTo--title">How do I use it?</h2>
             <ol class="text__listContainer">
                 <li class="text__listContainer--item">
                     <p class="text__listContainer--item--text">First, navigate to the root of your project folder in the command line and enter:</p>
@@ -34,10 +47,9 @@
                 <li class="text__listContainer--item">
                     <p class="text__listContainer--item--text">Call the script in your index.html file OR import it into your app.js file
                     </p>
-                        <img class="text__listContainer--item--image" src="./src/assets/callScript.png" alt="image of including the script tag in index.html file">
-                        <img class="text__listContainer--item--image" src="./src/assets/importGranim.png" alt="image of importing Granim from granim.js">
+                    <img class="text__listContainer--item--image" src="./src/assets/callScript.png" alt="image of including the script tag in index.html file">
+                    <img class="text__listContainer--item--image" src="./src/assets/importGranim.png" alt="image of importing Granim from granim.js">
                 </li>
-                
                 <li class="text__listContainer--item">
                     <p class="text__listContainer--item--text">In your index.html file, create a canvas element</p>
                     <img class="text__listContainer--item--image" src="./src/assets/createCanvas.png" alt="image of create canvas element">
@@ -46,31 +58,47 @@
                     <p class="text__listContainer--item--text">Within your script tags (or in a new JS file), create a new Granim Instance.</p>
                     <img class="text__listContainer--item--image" src="./src/assets/createGranimInstance.png" alt="image of create canvas element">
                 </li>
-
             </ol>
+            <a href="#uses" class="howTo-button">
+                <i class="pulse fas fa-chevron-circle-down"></i>
+            </a>
         </section>
-        <section class="wild wrapper">
-            <a href="https://www.awwwards.com/gradients-in-web-design-elements.html">Why gradients are still a thing.</a>
+        <!-- 'HOW TO' ENDS -->
+        <!-- 'USES' STARTS -->
+        <section class="uses text wrapper" id="uses">
+            <h2 class="text__heading">Why use Granim?</h2>
+            <ul class="uses__list">
+                <li class="usess__list--item">adds movement and direction</li>
+                <li class="usess__list--item">sets the mood</li>
+                <li class="usess__list--item">enhances user experience</li>
+                <li class="usess__list--item">it might be the only library that provides fluid and interactive gradients</li>
+                <li class="usess__list--item">it's hella cool!</li>
+            </ul>
+            <a href="#photo" class="howTo-button">
+                <i class="pulse fas fa-chevron-circle-down"></i>
+            </a>
         </section>
-        <section class="text wrapper">
-            <h2 class="text__heading">What can I do with it?</h2>
-            <p class="text__description">Well, let me tell you.</p>
-        </section>
-        <section class="photo">
+        <!-- 'USES' ENDS -->
+        <!-- 'PHOTO' STARTS -->
+        <section class="photo" id="photo">
             <h2 class="photo__title">Fluid Image Blending</h2>
             <canvas id="canvas-image-blending" class="canvas-image-blending canvas"></canvas>
+            <a href="#wild" class="photo__button">
+                <i class="pulse fas fa-chevron-circle-down"></i>
+            </a>
         </section>
-        <section class="wild wrapper">
-            <a href="https://sarcadass.github.io/granim.js/examples.html">What else can I do with it?</a>
+        <!-- PHOTO ENDS -->
+        <!-- 'WILD'STARTS -->
+        <section class="wild wrapper" id="wild">
+            <a href="https://sarcadass.github.io/granim.js/examples.html" target=_blank>What else can I do with Granim?</a>
         </section>
-       
-        
-        
+        <!-- WILD ENDS -->   
     </main>
+    <!--======= MAIN ENDS =========-->
 
 
 
-   
+   <!-- ===========BEGINNING OF SCRIPTS========== -->
     <script src="public/scripts/app.js"></script>
 </body>
 </html>
